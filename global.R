@@ -11,7 +11,7 @@ library(RJDBC)
 library(dygraphs)
 
 drv <- JDBC("com.microsoft.sqlserver.jdbc.SQLServerDriver", "www/sqljdbc4.jar")
-wficConn <- dbConnect(drv, "jdbc:sqlserver://wfic-envis-sql", "sa", "W@#bui1ding*90")
+wficConn <- dbConnect(drv, "jdbc:sqlserver://wfic-envis-sql", "******", "********")
 
 roomList<-dbGetQuery(wficConn, statement = "SELECT 
       [id],[name],[type],[reference],[is_root],[tenancy_id],[parent_id]
